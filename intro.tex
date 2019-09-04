@@ -1,0 +1,177 @@
+% intro.tex
+% Title: Операционные системы. Введение
+% Author: Evgeny Simonenko <easimonenko@mail.ru>
+% License: CC BY-ND 4.0
+
+\documentclass[9pt,pdf]{beamer}
+
+\usepackage{polyglossia}
+\setdefaultlanguage{russian}
+\setotherlanguage{english}
+\defaultfontfeatures{Ligatures={TeX},Renderer=Basic}
+\setmainfont[Ligatures={TeX,Historic}]{Linux Libertine O}
+\setsansfont{DejaVu Sans}
+\setmonofont{Linux Libertine Mono O}
+
+\usetheme{Verona}
+\usecolortheme{dove}
+
+\setcounter{tocdepth}{1}
+
+\usepackage{biblatex}
+\bibliography{operating-systems}
+
+\begin{document}
+	
+\author{Симоненко Е.А.}
+\title{Операционные системы}
+\subtitle{Введение}
+\institute[КубГТУ]{Кубанский государственный технологический университет}
+\date{2019}
+
+\nocite{*}
+	
+\begin{frame}
+	\titlepage
+\end{frame}
+	
+\begin{frame}
+	\frametitle{Содержание}
+	\tableofcontents
+\end{frame}
+
+\section{Системное программное обеспечение}
+
+\begin{frame}
+	\frametitle{Системное программное обеспечение}
+	\begin{quotation}
+		Систе́мное програ́ммное обеспе́чение — комплекс программ, которые обеспечивают управление компонентами компьютерной системы, такими как процессор, оперативная память, устройства ввода-вывода, сетевое оборудование, выступая как «межслойный интерфейс», с одной стороны которого аппаратура, а с другой — приложения пользователя. В отличие от прикладного программного обеспечения, системное не решает конкретные практические задачи, а лишь обеспечивает работу других программ, предоставляя им сервисные функции, абстрагирующие детали аппаратной и микропрограммной реализации вычислительной системы, управляет аппаратными ресурсами вычислительной системы.
+		
+		---
+		
+		https://ru.wikipedia.org/wiki/Системное\_программное\_обеспечение
+	\end{quotation}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Состав системного программного обеспечения}
+	\begin{itemize}
+		\item операционные системы
+		\item системные утилиты
+		\item системы программирования
+		\item системы управления базами данных
+		\item связующее программное обеспечение
+		\item пользовательский интерфейс
+	\end{itemize}
+\end{frame}
+
+\section{Операционная система}
+
+\begin{frame}
+	\frametitle{Операционная система}
+	\begin{quotation}
+		Операцио́нная систе́ма, сокр. ОС (англ. operating system, OS) — комплекс взаимосвязанных программ, предназначенных для управления ресурсами компьютера и организации взаимодействия с пользователем.
+		
+		---
+		
+		https://ru.wikipedia.org/wiki/Операционная\_система
+	\end{quotation}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Структура операционной системы}
+	\begin{itemize}
+		\item ядро ОС
+		\item драйверы устройств
+		\item системные сервисы
+		\item программный интерфейс (API)
+		\item файловая система
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Функции операционной системы}
+	\begin{itemize}
+		\item управление устройствами компьютера
+		\item обеспечение базовых функций хранения и передачи информации
+		\item предоставление базового пользовательского интерфейса (не у всех)
+		\item управление процессами (не у всех)
+		\item управление пользователями (не у всех)
+	\end{itemize}
+\end{frame}
+
+\section{Классификация операционных систем}
+
+\begin{frame}
+	\frametitle{Классификация операционных систем}
+	\begin{itemize}
+		\item по назначению
+		\item по типу компьютера
+		\item по типу ядра
+		\item по количеству пользователей
+		\item по количеству выполняемых задач
+		\item по наличию поддержки сети
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Классификация по назначению}
+	\begin{itemize}
+		\item для пользовательский приложений
+		\item для серверных приложений
+		\item для управления устройствами
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Классификация по типу компьютера}
+	\begin{itemize}
+		\item для персональных компьютеров
+		\item для серверов
+		\item для встраиваемых систем
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Классификация по типу ядра}
+	\begin{itemize}
+		\item монолитные (Linux, BSD)
+		\item микроядерные (GNU/Hurd, OS RT)
+	\end{itemize}
+\end{frame}
+
+\section{Этапы развития операционных систем}
+
+\begin{frame}
+	\frametitle{Этапы развития операционных систем}
+	\begin{itemize}
+		\item (1945-1955) ОС ещё нет
+		\item (1955-1965) ОС пакетной обработки
+		\item (1965-1980) многозадачные ОС (OS/360, CTSS, MULTICS, Unix, BSD)
+		\item (1975-2010) ОС персональных компьютеров (CP/M, MS-DOS, Windows, Linux)
+		\item (1995-2015) ОС мобильных устройств (планшетные ПК, смартфоны)
+	\end{itemize}
+\end{frame}
+
+\section{Библиография}
+
+\begin{frame}
+	\frametitle{Библиография}
+	\printbibliography
+\end{frame}
+
+\section*{Последний слайд}
+
+\begin{frame}
+	\center
+	
+	\textbf{\textsl{\inserttitle}}
+	
+	\textsl{\insertsubtitle}
+	
+	\insertauthor
+	
+	\url{easimonenko@mail.ru}
+\end{frame}
+
+\end{document}
